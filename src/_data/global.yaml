@@ -1,0 +1,17 @@
+logo: "logo.svg"
+nav:
+  - title: "How it works"
+    icon: "hiw.svg"
+    destination: "howitworks"
+  - title: "Bin specs"
+    icon: "specs.svg"
+    destination: "binspecs"
+  - title: "Waste type"
+    icon: "waste.svg"
+    destination: "wastetype"
+  - title: "Support"
+    icon: "support.svg"
+    destination: "support"
+ctaButton:
+  - title: "Get a Quote"
+    destination: "getaquote.dom"
