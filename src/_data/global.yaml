@@ -15,3 +15,16 @@ nav:
 ctaButton:
   title: "Get a Quote"
   destination: "https://getaquote.com"
+footer:
+  nav:
+    - title: "Privacy Policy"
+      destination: "privacypolicy"
+    - title: "Terms & Conditions"
+      destination: "termsandconditions"
+  social:
+    - title: "Twitter"
+      icon: "twitter"
+      destination: "https://twitter.com/binscouk"
+    - title: "Facebook"
+      icon: "facebook"
+      destination: "https://facebook.com/binscouk"
