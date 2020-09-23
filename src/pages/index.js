@@ -8,9 +8,9 @@ import { Blocks } from "../components/blocks"
 console.log(global)
 console.log(home)
 
-export default function Home() {
+export default function Home(props) {
   return (
-    <Layout>
+    <Layout {...props}>
       <Blocks blocks={home.blocks} />
     </Layout>
   )
