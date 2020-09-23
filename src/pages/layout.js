@@ -4,7 +4,7 @@ import { v4 as uuid } from 'uuid';
 import global from "../_data/global.yaml"
 import { NavItem } from "../components/nav-item"
 
-export function Layout({children}) {
+export function Layout({ children }) {
   return (
     <>
     <header>
@@ -20,6 +20,7 @@ export function Layout({children}) {
       }
     </header>
     <main>
+      {children}
     </main>
     <footer>
 
