@@ -1,9 +1,11 @@
 import React from "react"
+import { v4 as uuid } from "uuid"
+import { Hero } from "./hero"
 
-function blockPicker({ type, content }) {
+function BlockPicker({ type, content }) {
   switch (type) {
     case "hero": {
-      return <h1>Hero</h1>
+      return <Hero {...content} />
     }
     case "why": {
       return <h1>Why</h1>
@@ -24,5 +26,5 @@ function blockPicker({ type, content }) {
 }
 
 export function Blocks({blocks}) {
-  return blocks.map(blockPicker);
+  return blocks.map((block) => <BlockPicker key={uuid()} {...block} />);
 }
