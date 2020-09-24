@@ -1,0 +1,10 @@
+@import "global/fonts";
+@import "global/config";
+@import "global/mixins";
+
+@import "utils/normalize";
+@import "utils/visually-hidden";
+
+@import "component/header";
+@import "component/footer";
+@import "component/nav";

@@ -1,7 +1,7 @@
 import React from "react";
 
 import home from "../_data/home.yaml";
-import { Layout } from "./layout";
+import { Layout } from "../components/layout";
 import { Blocks } from "../components/blocks";
 
 export default function Home(props) {

@@ -5,26 +5,19 @@ import { v4 as uuid } from "uuid";
 
 import global from "../_data/global.yaml";
 import { NavItem } from "../components/nav-item";
+import Logo from "./icons/logo";
+
+import "../scss/index.scss";
 
 export function Layout({ children, location, path }) {
   return (
     <>
       <header>
-        {path === "/" && (
-          <h1>
-            <Link to={"/"}>
-              <img src="logo.svg" alt="Bins.co.uk" />
-            </Link>
-          </h1>
-        )}
-
-        {path !== "/" && ( // TODO: Dry this up
-          <h2>
-            <Link to={"/"}>
-              <img src="logo.svg" alt="Bins.co.uk" />
-            </Link>
-          </h2>
-        )}
+        <h1>
+          <Link to={"/"}>
+            <Logo aria-label="Bins.co.uk" />
+          </Link>
+        </h1>
         {global.nav && (
           <nav>
             <ul>
