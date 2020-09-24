@@ -1,3 +1,5 @@
+ @use 'sass:map';
+
 @mixin visually-hidden {
   &:not(:focus):not(:active) {
     clip: rect(0 0 0 0);
@@ -7,5 +9,55 @@
     position: absolute;
     white-space: nowrap;
     width: 1px;
+  }
+}
+
+@mixin plain-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+@mixin mq-from($breakpoint) {
+  @media(screen and min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin mq-to($breakpoint) {
+  @media(screen and max-width: $breakpoint - 1px) {
+    @content;
+  }
+}
+
+@mixin mq-between($start, $end) {
+  @media(screen and (min-width: $start) and (max-width: $end)) {
+    @content;
+  }
+}
+
+@mixin spacing($property, $ratio: 1) {
+ @include mq-to($m) {
+   $multiplier: map.get($mobile-spacing, $ratio);
+   $property: $base-spacing * $multiplier;
+ }
+ @include mq-from($m) {
+   $multiplier: map.get($desktop-spacing, $ratio);
+   $property: $base-spacing * $multiplier;
+ }
+}
+
+@mixin container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $base-spacing;
+  padding-right: $base-spacing;
+  max-width: $content-max-width;
+  @include mq-from($tablet) {
+    padding-left: $base-spacing * 2.5;
+    padding-right: $base-spacing * 2.5;
+  }
+  @include mq-from($desktop) {
+    padding-left: $base-spacing * 5.25;
+    padding-right: $base-spacing * 5.25;
   }
 }

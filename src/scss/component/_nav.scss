@@ -1,0 +1,52 @@
+
+.global-nav {
+  @include mq-to($desktop) {
+    position: fixed;
+    background: white;
+    width: 100vw;
+    min-height: 100vh;
+    transform: translateX(-100vw);
+    opacity: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  @include mq-from($desktop) {
+    position: relative;
+  }
+}
+
+.nav-open .global-nav {
+  opacity: 1;
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out 0s, opacity 0.3s ease-in-out 0.3s;
+}
+
+.global-nav__items {
+  @include plain-list;
+
+  @include mq-from($desktop) {
+    display: flex;
+  }
+}
+
+.global-nav-button {
+  @include mq-from($desktop) {
+    display: none;
+  }
+}
+
+.global-nav__close {
+  position: absolute;
+  top: $base-spacing * 2;
+  right: $base-spacing * 2;
+  @include mq-from($desktop) {
+    display: none;
+  }
+}
+

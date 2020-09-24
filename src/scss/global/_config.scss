@@ -1,0 +1,53 @@
+// breakpoints
+
+$tablet: 415px;
+$desktop: 769px;
+
+// spacing
+
+$base-spacing: 16px;
+
+$mobile-spacing: (
+        "0.5": 0.5,
+        "1": 1,
+        "2": 1.5,
+        "3": 1.5,
+        "4": 2,
+        "5": 3,
+        "6": 3,
+        "7": 3,
+        "8": 4
+);
+
+$desktop-spacing: (
+        "0.5": 0.5,
+        "1": 1,
+        "2": 1.5,
+        "3": 2,
+        "4": 3,
+        "5": 4,
+        "6": 5,
+        "7": 6,
+        "8": 8
+);
+
+$content-max-width: 1448px;
+
+// Colors
+$brand-green: #00CA88;
+$brand-peach: #FFB38F;
+$brand-yellow: #F8DB76;
+$brand-purple: #6246EA;
+
+$dark-dark: #4C4A6F;
+$dark-mid: #9392AF;
+$dark-light: #9392AF;
+
+$grey-light: #F3F7FB;
+$grey-mid: #E9E9E9;
+$grey-dark: #DEE4EA;
+
+// Uses
+
+$primary: $brand-green;
+$secondary: $brand-purple;
