@@ -57,3 +57,6 @@ blocks:
   - type: "commitment"
     content:
       title: "The commitment to our customers"
+      text: "The aim of our recycling waste management plans is to extract the maximum practical benefits of every kind of waste we collect, whilst generating the minimum amount of waste and at the same time maintaining a cost-effective service for your business that doesn’t dent your profits."
+      buttonText: "Heard enough? Get a quote now"
+      buttonDestination: "/"

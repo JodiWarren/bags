@@ -4,6 +4,7 @@ import { Hero } from "./hero";
 import { WhyBins } from "./why";
 import { How } from "./how";
 import { Questions } from "./questions";
+import { Commitment } from "./commitment";
 
 function BlockPicker({ type, content }) {
   switch (type) {
@@ -20,7 +21,7 @@ function BlockPicker({ type, content }) {
       return <Questions {...content} />;
     }
     case "commitment": {
-      return <h1>Commitment</h1>;
+      return <Commitment {...content} />;
     }
     default: {
       return null;
