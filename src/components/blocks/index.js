@@ -2,6 +2,7 @@ import React from "react"
 import { v4 as uuid } from "uuid"
 import { Hero } from "./hero"
 import { WhyBins } from "./why"
+import { How } from "./how"
 
 function BlockPicker({ type, content }) {
   switch (type) {
@@ -12,7 +13,7 @@ function BlockPicker({ type, content }) {
       return <WhyBins {...content} />
     }
     case "how": {
-      return <h1>How</h1>
+      return <How {...content} />
     }
     case "faq": {
       return <h1>FAQ</h1>
