@@ -38,7 +38,7 @@ blocks:
           content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius adipiscing etiam purus magna nisl sed Ullamcorper magna.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius adipiscing etiam purus magna nisl sed ullamcorper magna. "
         - title: "We take if from there"
           content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius adipiscing etiam purus magna nisl sed Ullamcorper magna.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius adipiscing etiam purus magna nisl sed ullamcorper magna. "
-  - type: "faq"
+  - type: "questions"
     content:
       title: "Questions?"
       questions:
