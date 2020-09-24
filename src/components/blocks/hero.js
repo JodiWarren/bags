@@ -1,7 +1,7 @@
 import React from "react";
 
-import BannerImg from "../../assets/hero-banner.png"
-import BadgeImg from "../../assets/free-bins-badge.png"
+import BannerImg from "../../assets/hero-banner.png";
+import BadgeImg from "../../assets/free-bins-badge.png";
 
 export function Hero({ strap, formInput, formButton }) {
   return (
@@ -13,9 +13,9 @@ export function Hero({ strap, formInput, formButton }) {
         <button type="submit">{formButton}</button>
       </form>
       <div className="hero__banner" aria-hidden={true}>
-        <img src={BannerImg} alt=""/>
-        <img src={BadgeImg} alt=""/>
+        <img src={BannerImg} alt="" />
+        <img src={BadgeImg} alt="" />
       </div>
     </section>
-  )
+  );
 }

@@ -1,25 +1,26 @@
-import React from "react"
-import { v4 as uuid } from "uuid"
-import { Hero } from "./hero"
-import { WhyBins } from "./why"
-import { How } from "./how"
+import React from "react";
+import { v4 as uuid } from "uuid";
+import { Hero } from "./hero";
+import { WhyBins } from "./why";
+import { How } from "./how";
+import { Questions } from "./questions";
 
 function BlockPicker({ type, content }) {
   switch (type) {
     case "hero": {
-      return <Hero {...content} />
+      return <Hero {...content} />;
     }
     case "why": {
-      return <WhyBins {...content} />
+      return <WhyBins {...content} />;
     }
     case "how": {
-      return <How {...content} />
+      return <How {...content} />;
     }
-    case "faq": {
-      return <h1>FAQ</h1>
+    case "questions": {
+      return <Questions {...content} />;
     }
     case "commitment": {
-      return <h1>Commitment</h1>
+      return <h1>Commitment</h1>;
     }
     default: {
       return null;
@@ -27,6 +28,6 @@ function BlockPicker({ type, content }) {
   }
 }
 
-export function Blocks({blocks}) {
-  return blocks.map((block) => <BlockPicker key={uuid()} {...block} />);
+export function Blocks({ blocks }) {
+  return blocks.map(block => <BlockPicker key={uuid()} {...block} />);
 }
